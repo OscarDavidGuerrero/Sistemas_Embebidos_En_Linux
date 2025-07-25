@@ -2,7 +2,7 @@ import sqlite3
 from datetime import datetime
 
 class DBManager:
-    def __init__(self, db_path="../sistema_riego.db"):
+    def __init__(self, db_path="sistema_riego.db"):
         self.conn = sqlite3.connect(db_path)
         self.create_table()
     

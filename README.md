@@ -55,24 +55,23 @@ Si usas entorno virtual:
 
 1. **Registrar lecturas automáticamente**
 
-        cd ~/Sistemas_Embebidos_En_Linux/sistema_riego/src
-        python3 registrar_lecturas.py
+        cd ~/Sistemas_Embebidos_En_Linux/sistema_riego
+        python src/registrar_lecturas.py
 
     - El script lee el sensor cada 5 segundos y guarda la lectura en la base de datos.
     - Detén la ejecución con Ctrl+C.
 
-2. **Consultar la base de datos (opcional)**
+2. **Consultar la base de datos **
+    - Para ver las últimas lecturas, exportarlas a CSV y generar gráficos
+    - Esto genera:
 
-        python3 db_manager.py
+       - lecturas.csv con el historial reciente
+       - grafico_linea.png: gráfico de línea de estado del sensor
+       - grafico_barras.png: cantidad de lecturas por estado
+       - grafico_por_dia.png: lecturas agrupadas por fecha
 
-    - Inserta lecturas de prueba y muestra las más recientes.
-
-3. **Graficar el historial de lecturas**
-
-        python3 graficar_historial.py
-
-    - Genera la imagen `historial_lecturas.png` en la carpeta `src`.
-
+         cd ~/Sistemas_Embebidos_En_Linux/sistema_riego
+	 python src/ver_lecturas.py
 ---
 
 ## ¿Cómo funciona el sistema?
