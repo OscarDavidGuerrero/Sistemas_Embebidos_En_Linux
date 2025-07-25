@@ -1,0 +1,7 @@
+narwhals==1.48.0
+packaging==25.0
+pigpio==1.78
+plotly==6.2.0
+RPi.GPIO==0.7.1
+smbus2==0.5.0
+spidev==3.7
